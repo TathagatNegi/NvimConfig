@@ -56,11 +56,9 @@ return require('packer').startup(function(use)
   use("theprimeagen/harpoon")
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
-  use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
-  use("tpope/vim-fugitive")
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
@@ -87,6 +85,8 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   -- Git
+
+  use("tpope/vim-fugitive")
   use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
   use({
     "folke/trouble.nvim",
